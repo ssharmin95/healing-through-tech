@@ -9,6 +9,10 @@
 ### 💌 Encouragement Messages
 - Tap a button to receive a random, heartwarming message to boost your mood.
 
+### 🧠 Zen Quotes
+- Get inspirational quotes from the ZenQuotes API to promote mindfulness and reflection.
+- Includes fallback quotes when offline or if API limits are reached.
+
 ### 🤖 KindBot Chat
 - A gentle AI-powered chat companion for support, motivation, and judgment-free conversation.
 
@@ -34,10 +38,11 @@
 
 1. **Open the website** in your browser.
 2. **Use the sidebar menu** to explore different sections:
-   - Encouragement, KindBot, Stretching, Resources, Therapist Dashboard.
-3. **Enter your ZIP code** in the Resources section to find nearby help.
-4. **Stretch and refresh** anytime using the visual stretch cards and instructions.
-5. **Click Notion** to open your therapist dashboard and journal workspace.
+   - Encouragement, Zen Quotes, KindBot, Stretching, Resources, Therapist Dashboard.
+3. **Get inspirational quotes** from the Zen Quotes section to promote mindfulness.
+4. **Enter your ZIP code** in the Resources section to find nearby help.
+5. **Stretch and refresh** anytime using the visual stretch cards and instructions.
+6. **Click Notion** to open your therapist dashboard and journal workspace.
 
 ---
 
@@ -45,8 +50,8 @@
 
 - **HTML5 & CSS3** – for structure and responsive styling
 - **JavaScript** – for interactivity and dynamic section loading
+- **ZenQuotes API** – for fetching inspirational quotes with fallback system
 - **Notion Integration** – for therapist journaling and progress tracking (external link)
-- *(Optional: Backend or APIs can be added later)*
 
 ---
 
@@ -55,6 +60,7 @@
 This app was created to:
 - Empower individuals with low or no tech access.
 - Support emotional healing through tech-based encouragement and structure.
+- Promote mindfulness and reflection through inspirational quotes.
 - Offer practical wellness tools in a gentle and joyful format.
 
 ---
