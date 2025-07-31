@@ -19,7 +19,6 @@ const fallbackZenQuotes = [
   { q: "In the midst of movement and chaos, keep stillness inside of you.", a: "Deepak Chopra" },
   { q: "Life is a journey, not a destination.", a: "Ralph Waldo Emerson" }
 ];
-
 function showSection(sectionId) {
   // Hide all content sections
   document.querySelectorAll('.content-section').forEach(section => {
@@ -158,7 +157,6 @@ function useFallbackQuote(quoteElement, authorElement) {
   quoteElement.innerText = fallbackQuote.q;
   authorElement.innerText = `— ${fallbackQuote.a}`;
 }
-
 // Initialize the page with encouragement section
 document.addEventListener('DOMContentLoaded', function() {
   showSection('encouragement');
