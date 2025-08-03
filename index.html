@@ -5,33 +5,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Healing Through Tech</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Princess+Sofia&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Healing Through Tech 🌈</h1>
+  <header class="video-header">
+    <video autoplay muted loop id="header-video">
+      <source src="HTT-VIDEO.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="header-overlay">
+      <h1 class="princess-sofia-regular">Healing Through Tech</h1>
+      <p class="subtitle">Digital tools for mental wellness and mindful living</p>
+    </div>
   </header>
 
   <div class="main-container">
     <nav class="sidebar">
-      <button onclick="showSection('encouragement')">💌 Encouragement</button>
-      <button onclick="showSection('zenquotes')">🧠 Zen Quotes</button>
-      <button onclick="showSection('kindbot')">🤖 Kind Bot</button>
-      <button onclick="showSection('stretching')">🧘 Stretching</button>
+      <button onclick="showSection('encouragement')">Encouragement</button>
+      <button onclick="showSection('zenquotes')">Zen Quotes</button>
+      <button onclick="showSection('kindbot')">Kind Bot</button>
+      <button onclick="showSection('stretching')">Stretching</button>
 
       <div class="dropdown">
         <button onclick="toggleDropdown()">Resources ▼</button>
         <div class="dropdown-content" id="resourceDropdown">
-          <div class="dropdown-item" onclick="showResourceType('food-pantry')">🥫 Food Pantry</div>
-          <div class="dropdown-item" onclick="showResourceType('clubhouse')">🏠 Clubhouse</div>
-          <div class="dropdown-item" onclick="showResourceType('senior-center')">👵 Senior Center</div>
-          <div class="dropdown-item" onclick="showResourceType('library')">📚 Library</div>
-          <div class="dropdown-item" onclick="showResourceType('urgent-care')">🏥 Urgent Care</div>
-          <div class="dropdown-item" onclick="showResourceType('hra')">🧾 HRA</div>
-          <div class="dropdown-item" onclick="showResourceType('social-security')">🏛️ Social Security</div>
+          <div class="dropdown-item" onclick="showResourceType('food-pantry')">Food Pantry</div>
+          <div class="dropdown-item" onclick="showResourceType('clubhouse')">Clubhouse</div>
+          <div class="dropdown-item" onclick="showResourceType('senior-center')">Senior Center</div>
+          <div class="dropdown-item" onclick="showResourceType('library')">Library</div>
+          <div class="dropdown-item" onclick="showResourceType('urgent-care')">Urgent Care</div>
+          <div class="dropdown-item" onclick="showResourceType('hra')">HRA</div>
+          <div class="dropdown-item" onclick="showResourceType('social-security')">Social Security</div>
         </div>
       </div>
 
-      <button onclick="showSection('therapist')">🧑‍⚕️ Therapist Dashboard</button>
+      <button onclick="showSection('therapist')">Therapist Dashboard</button>
     </nav>
 
     <main class="content">
@@ -41,54 +51,54 @@
       <!-- Content sections -->
       <div id="encouragement" class="content-section" style="display: none;">
         <div id="contentBox">
-          <h2>Daily Encouragement 💖</h2>
+          <h2>Daily Encouragement</h2>
           <p id="message">Click below for a kind message.</p>
-          <button onclick="generateMessage()" style="background: #f67280; color: white; border: none; padding: 10px 20px; border-radius: 25px; cursor: pointer;">✨ Get Encouragement</button>
+          <button onclick="generateMessage()" class="action-button">Get Encouragement</button>
         </div>
       </div>
 
       <div id="kindbot" class="content-section" style="display: none;">
         <div id="contentBox">
-          <h2>Talk to KindBot 🤗</h2>
-          <p>🤖 <strong>Your Gentle AI Companion</strong></p>
+          <h2>Talk to KindBot</h2>
+          <p><strong>Your Gentle AI Companion</strong></p>
           <p>A safe space for judgment-free conversation and support</p>
-          <button onclick="openKindBot()" style="background: #f67280; color: white; border: none; padding: 10px 20px; border-radius: 25px; cursor: pointer;">Open KindBot Chat</button>
+          <button onclick="openKindBot()" class="action-button">Open KindBot Chat</button>
         </div>
       </div>
 
       <div id="stretching" class="content-section" style="display: none;">
         <div id="contentBox">
-          <h2>Whole Body Stretching Exercises 🧘</h2>
+          <h2>Whole Body Stretching Exercises</h2>
           
           <!-- Stretching Image Gallery -->
           <div class="stretching-gallery">
             <div class="stretch-card">
               <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300&h=200&fit=crop" alt="Neck Stretches" class="stretch-image">
-              <h4>🪑 Neck Rolls</h4>
+              <h4>Neck Rolls</h4>
               <p>Slowly roll your neck clockwise, then counter-clockwise. (10 seconds each way)</p>
             </div>
             
             <div class="stretch-card">
               <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=300&h=200&fit=crop" alt="Shoulder Stretches" class="stretch-image">
-              <h4>👐 Shoulder Shrugs</h4>
+              <h4>Shoulder Shrugs</h4>
               <p>Raise your shoulders to your ears and release. (10 reps)</p>
             </div>
             
             <div class="stretch-card">
               <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300&h=200&fit=crop" alt="Side Bends" class="stretch-image">
-              <h4>🙆 Side Bends</h4>
+              <h4>Side Bends</h4>
               <p>Stand tall and reach one hand overhead while bending to the opposite side. (5 reps per side)</p>
             </div>
             
             <div class="stretch-card">
               <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=300&h=200&fit=crop" alt="Hamstring Stretch" class="stretch-image">
-              <h4>🦵 Hamstring Stretch</h4>
+              <h4>Hamstring Stretch</h4>
               <p>Sit and reach toward your toes. Hold for 15 seconds.</p>
             </div>
             
             <div class="stretch-card">
               <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300&h=200&fit=crop" alt="Child's Pose" class="stretch-image">
-              <h4>🧘 Child's Pose</h4>
+              <h4>Child's Pose</h4>
               <p>Kneel down and stretch arms forward. Hold for 30 seconds.</p>
             </div>
           </div>
@@ -96,51 +106,51 @@
           <div class="exercise-steps">
             <h3>Step-by-Step Stretch Routine:</h3>
             <ol>
-              <li>🪑 <strong>Neck Rolls</strong> – Slowly roll your neck clockwise, then counter-clockwise. (10 seconds each way)</li>
-              <li>👐 <strong>Shoulder Shrugs</strong> – Raise your shoulders to your ears and release. (10 reps)</li>
-              <li>🙆 <strong>Side Bends</strong> – Stand tall and reach one hand overhead while bending to the opposite side. (5 reps per side)</li>
-              <li>🦵 <strong>Hamstring Stretch</strong> – Sit and reach toward your toes. Hold for 15 seconds.</li>
-              <li>🧘 <strong>Child's Pose</strong> – Kneel down and stretch arms forward. Hold for 30 seconds.</li>
+              <li><strong>Neck Rolls</strong> – Slowly roll your neck clockwise, then counter-clockwise. (10 seconds each way)</li>
+              <li><strong>Shoulder Shrugs</strong> – Raise your shoulders to your ears and release. (10 reps)</li>
+              <li><strong>Side Bends</strong> – Stand tall and reach one hand overhead while bending to the opposite side. (5 reps per side)</li>
+              <li><strong>Hamstring Stretch</strong> – Sit and reach toward your toes. Hold for 15 seconds.</li>
+              <li><strong>Child's Pose</strong> – Kneel down and stretch arms forward. Hold for 30 seconds.</li>
             </ol>
           </div>
           
-          <button onclick="randomStretch()" style="background: #f67280; color: white; border: none; padding: 10px 20px; border-radius: 25px; cursor: pointer;">🎲 Show Random Stretch</button>
+          <button onclick="randomStretch()" class="action-button">Show Random Stretch</button>
           <p id="randomStretchText"></p>
         </div>
       </div>
 
       <div id="resources" class="content-section" style="display: none;">
         <div id="contentBox">
-          <h2>Find Local Help 📍</h2>
+          <h2>Find Local Help</h2>
           <input type="text" id="zip" placeholder="Enter ZIP (e.g., 10001)" style="width: 100%; padding: 12px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 8px;" />
-          <button onclick="findResources()" style="background: #f67280; color: white; border: none; padding: 10px 20px; border-radius: 25px; cursor: pointer;">Find Resources</button>
+          <button onclick="findResources()" class="action-button">Find Resources</button>
           <div id="resourceResults"></div>
         </div>
       </div>
 
       <div id="zenquotes" class="content-section" style="display: none;">
         <div id="contentBox">
-          <h2>Daily Zen Quotes 🧠</h2>
+          <h2>Daily Zen Quotes</h2>
           <div class="quote-container">
             <p id="zenquote" class="quote-text">Click below for a zen quote to inspire mindfulness.</p>
             <p id="zenauthor" class="quote-author"></p>
           </div>
-          <button onclick="getZenQuote()" style="background: #f67280; color: white; border: none; padding: 10px 20px; border-radius: 25px; cursor: pointer;">✨ Get Zen Quote</button>
+          <button onclick="getZenQuote()" class="action-button">Get Zen Quote</button>
           <p style="margin-top: 15px; font-size: 0.8rem; color: #888; text-align: center;">
-            Inspirational quotes provided by <a href="https://zenquotes.io/" target="_blank" style="color: #2f80ed;">ZenQuotes API</a>
+            Inspirational quotes provided by <a href="https://zenquotes.io/" target="_blank" style="color: #a894f9;">ZenQuotes API</a>
           </p>
         </div>
       </div>
 
       <div id="therapist" class="content-section" style="display: none;">
         <div id="contentBox">
-          <h2>Therapist Dashboard 📊</h2>
-          <div style="background: #f5f5f5; padding: 20px; border-radius: 10px; text-align: center;">
-            <p>📝 <strong>Therapy Notes & Progress Tracking</strong></p>
+          <h2>Therapist Dashboard</h2>
+          <div style="background: #f5f5ff; padding: 20px; border-radius: 10px; text-align: center; border: 1px solid #e5e0f5;">
+            <p><strong>Therapy Notes & Progress Tracking</strong></p>
             <p>Connect your Notion workspace for personalized tracking</p>
-            <button onclick="window.open('https://www.notion.so', '_blank')" style="background: #f67280; color: white; border: none; padding: 10px 20px; border-radius: 25px; cursor: pointer;">Open Notion Workspace</button>
+            <button onclick="window.open('https://www.notion.so', '_blank')" class="action-button">Open Notion Workspace</button>
             <p style="margin-top: 10px; font-size: 0.9em; color: #666;">
-              💡 Tip: Create a dedicated workspace for your therapy notes and goals
+              Tip: Create a dedicated workspace for your therapy notes and goals
             </p>
           </div>
         </div>

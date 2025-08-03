@@ -1,40 +1,40 @@
-# 🌈 Healing Through Tech
+# Healing Through Tech
 
 **Healing Through Tech** is a warm, uplifting web app designed to promote mental well-being, independence, and daily self-care for individuals facing emotional or social challenges. It offers gentle support through encouragement messages, a friendly chatbot, stretching exercises, and a resource finder for local help.
 
 ---
 
-## 🧩 Features
+## Features
 
-### 💌 Encouragement Messages
+### Encouragement Messages
 - Tap a button to receive a random, heartwarming message to boost your mood.
 
-### 🧠 Zen Quotes
+### Zen Quotes
 - Get inspirational quotes from the ZenQuotes API to promote mindfulness and reflection.
 - Includes fallback quotes when offline or if API limits are reached.
 
-### 🤖 KindBot Chat
+### KindBot Chat
 - A gentle AI-powered chat companion for support, motivation, and judgment-free conversation.
 
-### 🧘 Guided Stretching Exercises
+### Guided Stretching Exercises
 - Includes calming body movements with images, instructions, and a random stretch feature.
 
-### 📍 Local Resource Finder
+### Local Resource Finder
 - Search for community services based on ZIP code, including:
-  - 🥫 Food Pantries  
-  - 🏠 Clubhouses  
-  - 👵 Senior Centers  
-  - 📚 Libraries  
-  - 🏥 Urgent Care  
-  - 🧾 HRA  
-  - 🏛️ Social Security Offices  
+  - Food Pantries  
+  - Clubhouses  
+  - Senior Centers  
+  - Libraries  
+  - Urgent Care  
+  - HRA  
+  - Social Security Offices  
 
-### 📊 Therapist Dashboard
+### Therapist Dashboard
 - Connect with Notion to manage therapy notes and track progress.
 
 ---
 
-## 🛠️ How to Use
+## How to Use
 
 1. **Open the website** in your browser.
 2. **Use the sidebar menu** to explore different sections:
@@ -46,7 +46,7 @@
 
 ---
 
-## 🧰 Tech Stack
+## Tech Stack
 
 - **HTML5 & CSS3** – for structure and responsive styling
 - **JavaScript** – for interactivity and dynamic section loading
@@ -55,7 +55,7 @@
 
 ---
 
-## 🎯 Purpose
+## Purpose
 
 This app was created to:
 - Empower individuals with low or no tech access.
@@ -65,7 +65,7 @@ This app was created to:
 
 ---
 
-## 📝 Future Improvements
+## Future Improvements
 
 - Integrate real-time resource data using ZIP-based APIs.
 - Add mood tracking via Notion API.
@@ -74,7 +74,7 @@ This app was created to:
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```bash
 project/

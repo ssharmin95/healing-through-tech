@@ -1,9 +1,9 @@
 const encouragements = [
-  "You're stronger than you know! 🌟",
-  "One small step is still progress. 💪",
-  "Breathe, you are doing amazing. 🌈",
-  "Your story matters. 💖",
-  "Keep going, better days are coming. ☀️"
+  "You're stronger than you know!",
+  "One small step is still progress.",
+  "Breathe, you are doing amazing.",
+  "Your story matters.",
+  "Keep going, better days are coming."
 ];
 
 // Fallback zen quotes in case the API is unavailable
@@ -43,8 +43,8 @@ function generateMessage() {
 function findResources() {
   const zip = document.getElementById('zip').value;
   const results = {
-    '10001': ['🥫 Food Pantry: 123 Main St', '🧾 Social Security Office: 456 Broadway', '🏛 HRA Office: 89 W 14th St', '👵 Senior Center: 200 10th Ave'],
-    '11201': ['🏛 HRA Office: 789 Court St', '👵 Senior Center: 321 Atlantic Ave', '🥫 Food Pantry: 55 Jay St', '🧾 Social Security Office: 88 Livingston St']
+    '10001': ['Food Pantry: 123 Main St', 'Social Security Office: 456 Broadway', 'HRA Office: 89 W 14th St', 'Senior Center: 200 10th Ave'],
+    '11201': ['HRA Office: 789 Court St', 'Senior Center: 321 Atlantic Ave', 'Food Pantry: 55 Jay St', 'Social Security Office: 88 Livingston St']
   };
   const output = results[zip] ? results[zip].join('<br>') : 'No results found for this ZIP. Try 211.org or call 311 for NYC resources.';
   const resultsElement = document.getElementById('resourceResults');
@@ -83,17 +83,17 @@ function showResourceType(type) {
 
 function randomStretch() {
   const stretches = [
-    { name: "Neck Rolls", description: "Roll slowly clockwise, then counter-clockwise.", emoji: "🪑" },
-    { name: "Shoulder Shrugs", description: "Raise and drop shoulders.", emoji: "👐" },
-    { name: "Side Bends", description: "Reach and lean to the side.", emoji: "🙆" },
-    { name: "Hamstring Stretch", description: "Reach toward your toes.", emoji: "🦵" },
-    { name: "Child's Pose", description: "Kneel and stretch forward.", emoji: "🧘" }
+    { name: "Neck Rolls", description: "Roll slowly clockwise, then counter-clockwise." },
+    { name: "Shoulder Shrugs", description: "Raise and drop shoulders." },
+    { name: "Side Bends", description: "Reach and lean to the side." },
+    { name: "Hamstring Stretch", description: "Reach toward your toes." },
+    { name: "Child's Pose", description: "Kneel and stretch forward." }
   ];
   
   const randomStretch = stretches[Math.floor(Math.random() * stretches.length)];
   const stretchText = document.getElementById('randomStretchText');
   if (stretchText) {
-    stretchText.innerHTML = `<strong>${randomStretch.emoji} ${randomStretch.name}</strong><br>${randomStretch.description}`;
+    stretchText.innerHTML = `<strong>${randomStretch.name}</strong><br>${randomStretch.description}`;
   }
   
   // Highlight the corresponding stretch card
